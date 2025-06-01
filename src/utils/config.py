@@ -9,6 +9,7 @@ class Config:
     DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
     TELEGRAM_CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID")
     DISCORD_CHANNEL_ID = os.getenv("DISCORD_CHANNEL_ID")
+    ALPHA_VANTAGE_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")  # Added
     LOG_FILE = "logs/bot.log"
     CHART_DIR = "charts"
-    DATA_REFRESH_INTERVAL = 3600  # Refresh data every hour
+    DATA_REFRESH_INTERVAL = 3600
