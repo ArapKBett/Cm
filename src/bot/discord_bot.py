@@ -9,7 +9,9 @@ from datetime import datetime, timedelta
 
 class DiscordBot:
     def __init__(self, cmc_api, forex_api, ict_analysis, prediction, chart_generator):
-        self.bot = commands.Bot(command_prefix="!")
+        intents = discord.Intents.default()
+        intents.message_content = True  # Enable message content intent for command processing
+        self.bot = commands.Bot(command_prefix="!", intents=intents)
         self.cmc_api = cmc_api
         self.forex_api = forex_api
         self.ict_analysis = ict_analysis
